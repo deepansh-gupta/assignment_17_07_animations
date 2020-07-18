@@ -1,0 +1,123 @@
+section, h1 { 
+
+    margin: 2rem 4rem;  
+   
+   } 
+   
+    
+   
+   .square { 
+   
+   width: 150px; 
+   
+   height: 150px; 
+   
+   background: blue; 
+   
+     position: relative; 
+   
+   } 
+   
+    
+   
+    
+   
+   /* The skew() method */ 
+   
+   #skew .square { 
+   
+     background-color: purple; 
+    
+   } 
+     
+   
+    
+   
+   #skew .square:hover {   
+        
+    animation: angle 2s infinite;
+    animation-direction: alternate;
+    transform: skew(20deg,10deg);
+    } 
+   
+    @keyframes angle{
+        /* 0%       { transform: translatex(0px) translatey(0px) }
+        50%      { transform: translatex(20px) translatey(-20px); }
+        100%     { transform: translatex( 0px) translatey( 0px) }
+         */
+         from { left: 0px; top: 0px;}
+         to { left: 40px; top: -40px;}
+    }
+      
+   
+    
+   
+   /* The scale() method */ 
+   
+   #scale .square div {  
+   
+      background: #000;   
+   
+      position: absolute; 
+   
+      left: 25%; 
+   
+      top: 25%; 
+   
+      width: 75px; 
+   
+      height: 75px; 
+      
+      transition: 2s; 
+      
+   } 
+   
+   #scale .square div:hover { 
+   
+/* animation: size 2s infinite; */
+
+    /* width: 40px;
+    height: 40px; */
+    
+    transform: scale(2,2);
+} 
+   
+    
+   
+   /* The rotate() method */ 
+   
+   #rotate .square { 
+   
+     background-color: tomato; 
+     transition: 2s ;
+    
+   } 
+   
+    
+   
+   #rotate .square:hover {    
+   
+   transform: rotate(140deg); 
+   
+   } 
+   
+    
+   
+    
+   
+   /* The translate() method */ 
+   
+   #translate .square { 
+   
+     background-color: orange; 
+   
+    transition-duration: 2s;
+   
+   } 
+   
+    
+   
+   #translate .square:hover {  
+   
+    transform: translatex(900px);
+   } 
