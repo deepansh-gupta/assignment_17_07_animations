@@ -1,1 +1,1 @@
-# assignment_17_07_animations
+learn animatons and their different properties
